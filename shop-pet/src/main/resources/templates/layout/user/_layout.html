@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!--Heading-->
+<head th:fragment="head">
+    <meta charset="utf-8">
+    <title>Twitter Bootstrap shopping cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="/user/css/bootstrap.css" rel="stylesheet"/>
+    <link href="/user/style.css" rel="stylesheet"/>
+    <link href="/user/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="/user/css/font-awesome-ie7.min.css" rel="stylesheet">
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="shortcut icon" href="/user/ico/favicon.ico">
+</head>
+
+<!--Header-->
+<div th:fragment="header">
+    <div class="container">
+        <div class="alignR">
+            <div class="pull-left socialNw">
+                <a href="#"><span class="icon-twitter"></span></a>
+                <a href="#"><span class="icon-facebook"></span></a>
+                <a href="#"><span class="icon-youtube"></span></a>
+                <a href="#"><span class="icon-tumblr"></span></a>
+            </div>
+            <a class="active" href="index.html"> <span class="icon-home"></span> Home</a>
+            <a href="#"><span class="icon-/user"></span> My Account</a>
+            <a href="register.html"><span class="icon-edit"></span> Free Register </a>
+            <a href="contact.html"><span class="icon-envelope"></span> Contact us</a>
+            <a href="cart.html"><span class="icon-shopping-cart"></span> 2 Item(s) - <span class="badge badge-warning"> $448.42</span></a>
+        </div>
+    </div>
+</div>
+
+<!--top-->
+    <div class="row" th:fragment="top">
+        <div class="span4">
+            <h1>
+                <a class="logo" href="index.html"><span>Twitter Bootstrap ecommerce template</span>
+                    <img src="/user/img/logo-bootstrap-shoping-cart.png" alt="bootstrap sexy shop">
+                </a>
+            </h1>
+        </div>
+        <div class="span4">
+            <div class="offerNoteWrapper">
+                <h1 class="dotmark">
+                    <i class="icon-cut"></i>
+                    Twitter Bootstrap shopping cart HTML template is available @ $14
+                </h1>
+            </div>
+        </div>
+        <div class="span4 alignR">
+            <p><br> <strong> Support (24/7) :  0800 1234 678 </strong><br><br></p>
+            <span class="btn btn-mini">[ 2 ] <span class="icon-shopping-cart"></span></span>
+            <span class="btn btn-warning btn-mini">$</span>
+            <span class="btn btn-mini">&pound;</span>
+            <span class="btn btn-mini">&euro;</span>
+        </div>
+    </div>
+<!--Menu-->
+<div class="navbar" th:fragment="menu">
+    <div class="navbar-inner">
+        <div class="container">
+            <a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <div class="nav-collapse">
+                <ul class="nav">
+                    <li class="active"><a href="index.html">Home	</a></li>
+                    <li class=""><a href="list-view.html">List View</a></li>
+                    <li class=""><a href="grid-view.html">Grid View</a></li>
+                    <li class=""><a href="three-col.html">Three Column</a></li>
+                    <li class=""><a href="four-col.html">Four Column</a></li>
+                    <li class=""><a href="general.html">General Content</a></li>
+                </ul>
+                <form action="#" class="navbar-search pull-left">
+                    <input type="text" placeholder="Search" class="search-query span2">
+                </form>
+                <ul class="nav pull-right">
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="icon-lock"></span> Login <b class="caret"></b></a>
+                        <div class="dropdown-menu">
+                            <form class="form-horizontal loginFrm">
+                                <div class="control-group">
+                                    <input type="text" class="span2" id="inputEmail" placeholder="Email">
+                                </div>
+                                <div class="control-group">
+                                    <input type="password" class="span2" id="inputPassword" placeholder="Password">
+                                </div>
+                                <div class="control-group">
+                                    <label class="checkbox">
+                                        <input type="checkbox"> Remember me
+                                    </label>
+                                    <button type="submit" class="shopBtn btn-block">Sign in</button>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="nav flex-column nav-tabs" th:fragment="js">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://gsgd.co.uk/sandbox/jquery/easing/jquery.easing.1.3.js"></script>
+    <script src="/user/tweenmax/gsap.min.js"></script>
+    <script src="/user/tweenmax/SplitText.min.js"></script>
+    <script src="/user/js/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="/user/js/main.js"></script>
+</div>
+
+
+
+<!--Footer-->
+<footer th:fragment="footer" class="container-fluid mt-3 mb-3">
+    <p class="text-center"> Pham Viet Khanh </p>
+</footer>
+
+
+
+</html>
